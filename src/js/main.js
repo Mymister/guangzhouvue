@@ -8,6 +8,7 @@ import 'mui/examples/hello-mui/css/icons-extra.css';
 import axios from 'axios';
 
 
+
 //启用VUE插件
 Vue.use(MintUi);
 Vue.use(Common);
@@ -15,7 +16,10 @@ Vue.prototype.axios = axios; // 把axios库放置到原型,其他组件直接可
 
 
 //导入根组件
-import AppComponent from '../component/App.vue'
+import AppComponent from '../component/App.vue';
+
+
+
 
 //渲染组件，启动项目
 new Vue({
