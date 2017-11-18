@@ -1,10 +1,12 @@
 <template>
   <main>
       <p>{{ msg }}</p>
+      <router-view></router-view>
   </main>
 </template>
 
 <script>
+// 这里vue要求我们对外暴漏一个组件的配置项
     export default {
         data() {
             return {
@@ -14,7 +16,7 @@
     }
 </script>
 
-<style>
+<style scoped >
     p {
         font-size: 30px;
         color: red;
